@@ -1,5 +1,11 @@
-const AboutPage = () => {
-  return <h1>About page</h1>
-}
+import Header from "@/components/common/header";
 
-export default AboutPage
+const AboutPage = () => {
+  return (
+    <div>
+      <Header isTransparent="bg-primary-green" />
+    </div>
+  );
+};
+
+export default AboutPage;

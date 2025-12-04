@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <>
       <div className={`flex flex-col w-full relative ${styles.bgGradientHero}`}>
-        <Header />
+        <Header isTransparent="bg-transparent" />
         <Image
           alt="bg hero"
           fill={true}

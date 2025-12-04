@@ -5,7 +5,11 @@ import { LayoutContent } from "../layout/layout-content";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const Header = () => {
+type HeaderProps = {
+  isTransparent: "bg-transparent" | "bg-primary-green";
+};
+
+const Header = ({ isTransparent }: HeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -19,7 +23,7 @@ const Header = () => {
   return (
     <div
       className={`h-20 fixed top-0 right-0 left-0 z-20 transition-colors duration-300 ${
-        scrolled ? "bg-primary-green" : "bg-transparent"
+        scrolled ? "bg-primary-green" : isTransparent
       }`}
     >
       <LayoutContent>
@@ -34,7 +38,6 @@ const Header = () => {
           <div className="flex gap-9">
             <Link href="/">Home</Link>
             <Link href="/about">Sobre</Link>
-            <Link href="/solutions">Soluções</Link>
             <Link href="/events">Eventos</Link>
             <Link href="/contacts">Contatos</Link>
           </div>
