@@ -4,12 +4,14 @@ import Image from "next/image";
 import { LayoutContent } from "../layout/layout-content";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 type HeaderProps = {
   isTransparent: "bg-transparent" | "bg-primary-green";
 };
 
 const Header = ({ isTransparent }: HeaderProps) => {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -36,10 +38,34 @@ const Header = ({ isTransparent }: HeaderProps) => {
             className="mb-2"
           />
           <div className="flex gap-9">
-            <Link href="/">Home</Link>
-            <Link href="/about">Sobre</Link>
-            <Link href="/events">Eventos</Link>
-            <Link href="/contacts">Contatos</Link>
+            <Link
+              href="/"
+              className={pathname === "/" ? "text-secondary-blue font-bold" : "text-white"}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className={pathname === "/about" ? "text-secondary-blue font-bold" : "text-white"}
+            >
+              Sobre
+            </Link>
+            <Link
+              href="/events"
+              className={
+                pathname === "/events" ? "text-secondary-blue font-bold" : "text-white"
+              }
+            >
+              Eventos
+            </Link>
+            <Link
+              href="/contacts"
+              className={
+                pathname === "/contacts" ? "text-secondary-blue font-bold" : "text-white"
+              }
+            >
+              Contatos
+            </Link>
           </div>
         </div>
       </LayoutContent>
