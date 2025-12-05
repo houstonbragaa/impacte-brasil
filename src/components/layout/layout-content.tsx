@@ -6,7 +6,7 @@ interface LayoutProp {
 }
 
 export const LayoutContent = ({ children, className }: LayoutProp) => {
-  return <div className={twMerge("px-[120px]", className)}>{children}</div>;
+  return <div className={twMerge("px-[30px] lg:px-[120px]", className)}>{children}</div>;
 };
 
 export const LayoutDesktop = ({ children, className }: LayoutProp) => {

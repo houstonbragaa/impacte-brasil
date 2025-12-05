@@ -5,6 +5,7 @@ import { LayoutContent } from "../layout/layout-content";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { MenuIcon } from "lucide-react";
 
 type HeaderProps = {
   isTransparent: "bg-transparent" | "bg-primary-green";
@@ -13,6 +14,7 @@ type HeaderProps = {
 const Header = ({ isTransparent }: HeaderProps) => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  //const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,13 +33,13 @@ const Header = ({ isTransparent }: HeaderProps) => {
       <LayoutContent>
         <div className="flex justify-between h-20 items-center text-white">
           <Image
-            width={300}
+            width={200}
+            className="md:w-[300px] w-[200px] mb-2"
             height={40}
             alt="logo"
             src="/logo.svg"
-            className="mb-2"
           />
-          <div className="flex gap-9">
+          <div className="md:flex hidden gap-9">
             <Link
               href="/"
               className={pathname === "/" ? "text-secondary-blue font-bold" : "text-white"}
@@ -66,6 +68,12 @@ const Header = ({ isTransparent }: HeaderProps) => {
             >
               Contatos
             </Link>
+          </div>
+
+          <div className="md:hidden flex">
+            <button type="button" className="text-white cursor-pointer hover:text-secondary-blue transition-colors duration-300">
+              <MenuIcon className="w-6 h-6" />
+            </button>
           </div>
         </div>
       </LayoutContent>
