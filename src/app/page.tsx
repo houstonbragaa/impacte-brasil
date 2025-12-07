@@ -35,10 +35,10 @@ const HomePage = () => {
         </div>
       </div>
       <div
-        className={`${styles.bgGradientHeroSecondary} h-[400px] flex justify-center items-center`}
+        className={`${styles.bgGradientHeroSecondary} md:h-[400px] h-[800px] flex md:flex-row gap-10 md:gap-0 flex-col-reverse  justify-center items-center`}
       >
-        <div className="text-white">
-          <p className="text-left max-w-[480px] text-xl">
+        <div className="text-white flex flex-col items-center md:gap-0 gap-6 md:items-start">
+          <p className="text-center md:text-left md:max-w-[480px] max-w-[330px] text-md md:text-xl">
             Juntos, enfrentamos gargalos reais, aceleramos decisões e
             construímos soluções completas e integradas para transformar o
             varejo supermercadista de forma prática e contínua.
@@ -51,6 +51,7 @@ const HomePage = () => {
             width={600}
             height={600}
             alt="logo orbita"
+            className="h-auto w-[350px] md:w-[600px]"
           />
         </div>
       </div>
