@@ -3,15 +3,15 @@ import ResultItem from "./result-item";
 
 const Results = () => {
   return (
-    <LayoutDesktop className="flex flex-col items-center m-auto mt-48 max-w-7xl space-y-16">
-      <h1 className="text-4xl font-semibold">Resultados</h1>
-      <LayoutContent className="flex items-center justify-around w-full">
+    <LayoutDesktop className="flex flex-col items-center m-auto lg:mt-48 mt-24 max-w-7xl space-y-16">
+      <h1 className="lg:text-4xl md:text-3xl text-xl font-semibold">Resultados</h1>
+      <LayoutContent className="flex items-start gap-10 lg:gap-0 flex-col lg:flex-row lg:justify-around w-full">
         <ResultItem value="500M" description={"Em\nresultados"} />
-        <div className="h-12 w-[2px] bg-primary-green"></div>
+        <div className="lg:h-12 lg:w-[2px] h-[2px] w-[60%] bg-primary-green"></div>
         <ResultItem value="100" description={"Mercados\natendidos"} />
-        <div className="h-12 w-[2px] bg-primary-green"></div>
+        <div className="lg:h-12 lg:w-[2px] h-[2px] w-[60%] bg-primary-green"></div>
         <ResultItem value="14" description={"Empresas no\necossistema"} />
-        <div className="h-12 w-[2px] bg-primary-green"></div>
+        <div className="lg:h-12 lg:w-[2px] h-[2px] w-[60%] bg-primary-green"></div>
         <ResultItem value="30" description={"Especialistas no\nsetor"} />
       </LayoutContent>
     </LayoutDesktop>
