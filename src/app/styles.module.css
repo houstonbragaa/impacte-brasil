@@ -19,3 +19,24 @@
 .bgGradientHeroSecondary {
   background: linear-gradient(135deg, #316178 0%, #047d43 75%, #04a859 100%);
 }
+
+.triangle {
+  width: 96px;
+  height: 48px;
+  margin: 0 auto;
+  display: block;
+  background: linear-gradient(135deg, #04a859 0%, #047d43 55%, #316178 100%);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+@keyframes float-updown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+.animate-float-updown {
+  animation: float-updown 2s ease-in-out infinite;
+}
