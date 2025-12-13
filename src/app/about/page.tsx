@@ -5,7 +5,7 @@ import AboutUs from "@/components/about/aboutus";
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col justify-center items-center">
       <div className={`flex flex-col w-full relative ${styles.bgGradientHero}`}>
         <Header isTransparent="bg-transparent" />
         <Main />
