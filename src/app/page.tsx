@@ -2,11 +2,11 @@ import Header from "@/components/common/header";
 
 import styles from "./styles.module.css";
 import Image from "next/image";
-import HeroContent from "@/components/hero-content";
+import HeroContent from "@/components/home/hero-content";
 import Button from "@/components/common/button";
-import Results from "@/components/results";
-import Benefits from "@/components/benefits";
-import Faq from "@/components/faq";
+import Results from "@/components/home/results";
+import Benefits from "@/components/home/benefits";
+import Faq from "@/components/home/faq";
 import Testimonials from "@/components/common/testimonials";
 import CtaSection from "@/components/common/cta-section";
 import Footer from "@/components/common/footer";

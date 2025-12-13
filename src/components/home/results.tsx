@@ -1,5 +1,5 @@
-import { LayoutContent, LayoutDesktop } from "./layout/layout-content";
-import ResultItem from "./result-item";
+import { LayoutContent, LayoutDesktop } from "@/components/layout/layout-content";
+import ResultItem from "@/components/home/result-item";
 
 const Results = () => {
   return (

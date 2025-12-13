@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { LayoutDesktop } from "./layout/layout-content";
-import FaqItem from "./faq-item";
+import { LayoutDesktop } from "@/components/layout/layout-content";
+import FaqItem from "@/components/home/faq-item";
 
 const QUESTIONS = [
   {

@@ -1,27 +1,27 @@
 import Image from "next/image";
-import { LayoutContent, LayoutDesktop } from "./layout/layout-content";
+import { LayoutContent, LayoutDesktop } from "@/components/layout/layout-content";
 import {
   ArrowDownWideNarrow,
   Blocks,
   ChartColumnIncreasing,
   HandFist,
 } from "lucide-react";
-import BenefitItem from "./benefit-item";
+import BenefitItem from "@/components/home/benefit-item";
 
 const Benefits = () => {
   return (
     <LayoutDesktop className="mt-48 flex justify-center">
       <LayoutContent className="w-7xl">
-        <div className="bg-zinc-100 w-full h-[500px] rounded-[96px] flex items-center justify-around p-12">
-          <div className="flex flex-col gap-4 justify-start">
-            <h1 className="font-bold text-4xl max-w-[300px]">
+        <div className="bg-zinc-100 w-full sm:h-[500px] h-full sm:rounded-[96px] rounded-4xl flex items-center flex-col sm:flex-row justify-around sm:p-12 p-6">
+          <div className="flex flex-col gap-4 sm:justify-start justify-center">
+            <h1 className="font-bold sm:text-4x text-3xl text-center sm:text-left max-w-[300px]">
               Fique por dentro de nossos serviços
             </h1>
-            <Image src="/video.png" width={300} height={200} alt="video" />
+            <Image src="/video.png" width={300} height={200} alt="video"/>
           </div>
-          <div className="grid grid-cols-2 grid-rows-2">
+          <div className="grid sm:grid-cols-2 sm:grid-rows-2 grid-cols-1 grid-rows-1">
             {/* Retangulo com linear gradiente destacado */}
-            <div className="flex flex-col gap-1 p-8 w-[200px] mb-16 bg-linear-to-r from-primary-green to-secondary-blue rounded-4xl">
+            <div className="flex flex-col gap-1 p-8 w-[200px] sm:mb-16 bg-linear-to-r from-primary-green to-secondary-blue rounded-4xl">
               <div className="flex justify-center items-center rounded-full w-12 h-12 bg-white">
                 <ArrowDownWideNarrow className="text-primary-green" />
               </div>
@@ -33,7 +33,7 @@ const Benefits = () => {
             <BenefitItem
               icon={<Blocks className="text-primary-green" />}
               text="Integração entre áreas isoladas (financeiro, equipe, operação)"
-              className="mt-16"
+              className="sm:mt-16 mt-0"
             />
 
             <BenefitItem

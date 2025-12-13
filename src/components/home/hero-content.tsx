@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Button from "./common/button";
-import { LayoutContent } from "./layout/layout-content";
+import Button from "@/components/common/button";
+import { LayoutContent } from "@/components/layout/layout-content";
 import ArrowDown from "@/assets/arrowdownhome.svg";
 
 const HeroContent = () => {

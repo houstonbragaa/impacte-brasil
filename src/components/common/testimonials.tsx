@@ -1,5 +1,5 @@
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
-import TestimonialItem from "../testimonial-item";
+import TestimonialItem from "../home/testimonial-item";
 
 const Testimonials = () => {
   return (
