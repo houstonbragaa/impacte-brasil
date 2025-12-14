@@ -11,7 +11,7 @@ const SolutionItem = ({ icon, title, description, className = "" }: SolutionsPro
           height={50}
           alt={icon}
         />
-        <h2 className="font-bold text-xl">{title}</h2>
+        <h2 className="font-bold text-xl text-center">{title}</h2>
         <p className='text-sm opacity-70 text-center'>{description}</p>
       </div>
     </div>
