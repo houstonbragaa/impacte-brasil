@@ -1,8 +1,17 @@
 import { LayoutContent } from "../layout/layout-content";
+import Image from "next/image";
+import styles from '@/app/styles.module.css'
 
 const Main = () => {
   return (
-    <LayoutContent className="flex flex-col mt-36 mb-36 justify-center items-center gap-20">
+    <LayoutContent className="relative flex flex-col mt-36 mb-36 justify-center items-center gap-20">
+      <Image
+          alt="bg hero"
+          fill={true}
+          src="/gridhome.svg"
+          className={`opacity-40 ${styles.bgImage}`}
+          priority={true}
+        />
       <h1 className="text-secondary-blue text-4xl font-semibold">
         Conheça nossa história
       </h1>
