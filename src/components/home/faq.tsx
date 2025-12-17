@@ -1,5 +1,8 @@
 import Image from "next/image";
-import { LayoutDesktop } from "@/components/layout/layout-content";
+import {
+  LayoutContent,
+  LayoutDesktop,
+} from "@/components/layout/layout-content";
 import FaqItem from "@/components/home/faq-item";
 
 const QUESTIONS = [
@@ -45,15 +48,17 @@ console.log(QUESTIONS);
 
 const Faq = () => {
   return (
-    <div className="flex flex-col justify-center items-center space-y-8 mt-48 mb-48">
-      <Image src="/logofooter.svg" width={300} height={39} alt="logo" />
-      <h2 className="text-3xl font-semibold">Perguntas frequentes</h2>
-      <LayoutDesktop className="flex flex-col gap-5 w-full max-w-5xl">
-        {QUESTIONS.map(({ id, question, response }: QuestionType) => (
-          <FaqItem key={id} question={question} response={response} />
-        ))}
-      </LayoutDesktop>
-    </div>
+    <LayoutContent>
+      <div className="flex flex-col justify-center items-center space-y-8 mt-48 mb-48">
+        <Image src="/logofooter.svg" width={300} height={39} alt="logo" className="sm:w-[300px] sm:h-[39px] w-[200px] h-[28px]"/>
+        <h2 className="text-3xl font-semibold">Perguntas frequentes</h2>
+        <LayoutDesktop className="flex flex-col gap-5 w-full max-w-5xl">
+          {QUESTIONS.map(({ id, question, response }: QuestionType) => (
+            <FaqItem key={id} question={question} response={response} />
+          ))}
+        </LayoutDesktop>
+      </div>
+    </LayoutContent>
   );
 };
 

@@ -58,7 +58,7 @@ const HomePage = () => {
       <Results />
       <Benefits />
       <div className="flex flex-col items-center justify-center mt-48 gap-8">
-        <h1 className="text-4xl font-semibold">
+        <h1 className="sm:text-4xl text-3xl font-semibold text-center">
           Pronto para virar essa chave?
         </h1>
         <Button text="Entrar para nosso ecossistema" />

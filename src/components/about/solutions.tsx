@@ -15,7 +15,7 @@ const Solutions = () => {
         estratégia, clareza e aplicação prática.
       </p>
       <div className="w-full flex gap-12 flex-wrap justify-center items-center">
-        {solutions.map(({ id, icon, title, description }, index) => (
+        {solutions.map(({ id, icon, title, description }, index) => ( 
           <SolutionItem
             key={id}
             icon={icon}
