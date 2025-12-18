@@ -5,7 +5,7 @@ import { LayoutContent } from "../layout/layout-content";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 
 type HeaderProps = {
   isTransparent: "bg-transparent" | "bg-primary-green";
@@ -14,7 +14,8 @@ type HeaderProps = {
 const Header = ({ isTransparent }: HeaderProps) => {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  //const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [sidebarVisible, setSidebarVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +24,28 @@ const Header = ({ isTransparent }: HeaderProps) => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Fechamento suave ao clicar fora
+  const handleOverlayClick = (
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    if (e.target === e.currentTarget) {
+      setSidebarVisible(false);
+      setTimeout(() => setIsOpen(false), 300); // match duration
+    }
+  };
+
+  // Abrir sidebar
+  const openSidebar = () => {
+    setIsOpen(true);
+    setTimeout(() => setSidebarVisible(true), 10); // animação suave
+  };
+
+  // Fechar sidebar
+  const closeSidebar = () => {
+    setSidebarVisible(false);
+    setTimeout(() => setIsOpen(false), 300); // match duration
+  };
 
   return (
     <div
@@ -42,20 +65,30 @@ const Header = ({ isTransparent }: HeaderProps) => {
           <div className="md:flex hidden gap-9">
             <Link
               href="/"
-              className={pathname === "/" ? "text-secondary-blue font-bold" : "text-white"}
+              className={
+                pathname === "/"
+                  ? "text-secondary-blue font-bold"
+                  : "text-white"
+              }
             >
               Home
             </Link>
             <Link
               href="/about"
-              className={pathname === "/about" ? "text-secondary-blue font-bold" : "text-white"}
+              className={
+                pathname === "/about"
+                  ? "text-secondary-blue font-bold"
+                  : "text-white"
+              }
             >
               Sobre
             </Link>
             <Link
               href="/events"
               className={
-                pathname === "/events" ? "text-secondary-blue font-bold" : "text-white"
+                pathname === "/events"
+                  ? "text-secondary-blue font-bold"
+                  : "text-white"
               }
             >
               Eventos
@@ -63,7 +96,9 @@ const Header = ({ isTransparent }: HeaderProps) => {
             <Link
               href="/contacts"
               className={
-                pathname === "/contacts" ? "text-secondary-blue font-bold" : "text-white"
+                pathname === "/contacts"
+                  ? "text-secondary-blue font-bold"
+                  : "text-white"
               }
             >
               Contatos
@@ -71,11 +106,73 @@ const Header = ({ isTransparent }: HeaderProps) => {
           </div>
 
           <div className="md:hidden flex">
-            <button type="button" className="text-white cursor-pointer hover:text-secondary-blue transition-colors duration-300">
+            <button
+              type="button"
+              onClick={openSidebar}
+              className="text-white cursor-pointer hover:text-secondary-blue transition-colors duration-300"
+            >
               <MenuIcon className="w-6 h-6" />
             </button>
           </div>
         </div>
+        {/* Sidebar Mobile animado à direita */}
+        {isOpen && (
+          <div
+            className="fixed inset-0 z-40 bg-black/70 flex justify-end"
+            onClick={handleOverlayClick}
+          >
+            <div
+              className={`w-64 h-full bg-primary-green p-6 pt-10 flex flex-col gap-6 shadow-lg relative transform transition-transform duration-300 ease-in-out
+                ${sidebarVisible ? "translate-x-0" : "translate-x-full"}`}
+            >
+              <button
+                className="absolute top-6 right-6 text-white hover:text-secondary-blue transition-colors"
+                onClick={closeSidebar}
+                aria-label="Fechar menu"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <Link
+                href="/"
+                className={`text-lg font-semibold text-left ${
+                  pathname === "/" ? "text-secondary-blue" : "text-white"
+                }`}
+                onClick={closeSidebar}
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                className={`text-lg font-semibold text-left ${
+                  pathname === "/about" ? "text-secondary-blue" : "text-white"
+                }`}
+                onClick={closeSidebar}
+              >
+                Sobre
+              </Link>
+              <Link
+                href="/events"
+                className={`text-lg font-semibold text-left ${
+                  pathname === "/events" ? "text-secondary-blue" : "text-white"
+                }`}
+                onClick={closeSidebar}
+              >
+                Eventos
+              </Link>
+              <Link
+                href="/contacts"
+                className={`text-lg font-semibold text-left ${
+                  pathname === "/contacts"
+                    ? "text-secondary-blue"
+                    : "text-white"
+                }`}
+                onClick={closeSidebar}
+              >
+                Contatos
+              </Link>
+            </div>
+          </div>
+        )}
       </LayoutContent>
     </div>
   );
