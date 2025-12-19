@@ -3,9 +3,10 @@
 import Image from "next/image";
 import { LayoutContent } from "../layout/layout-content";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { MenuIcon, X } from "lucide-react";
+import { useMenuScroll } from "@/hooks/use-menu-scroll";
 
 type HeaderProps = {
   isTransparent: "bg-transparent" | "bg-primary-green";
@@ -13,18 +14,10 @@ type HeaderProps = {
 
 const Header = ({ isTransparent }: HeaderProps) => {
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  const scrolled = useMenuScroll();
   // Fechamento suave ao clicar fora
   const handleOverlayClick = (
     e: React.MouseEvent<HTMLDivElement, MouseEvent>
