@@ -16,7 +16,7 @@ const Main = () => {
         Conheça nossa história
       </h1>
       <div className="flex lg:h-[600px] md:h-[500px] w-full gap-6 justify-center">
-        <div className="w-[430px] h-full bg-white rounded-3xl">
+        <div className="w-[430px] h-full bg-zinc-300 rounded-3xl">
           {/* Video apresentando o impacte brasil */}
         </div>
 
@@ -29,15 +29,15 @@ const Main = () => {
             maior ecossistema de soluções integradas para o varejo no país.
           </p>
           <div className="grid grid-cols-2 grid-rows-1 gap-6 w-full h-full">
-            <div className="bg-white rounded-3xl">{/* Foto */}</div>
+            <div className="bg-zinc-300 rounded-3xl">{/* Foto */}</div>
 
-            <div className="bg-white rounded-3xl">{/* Foto */}</div>
+            <div className="bg-zinc-300 rounded-3xl">{/* Foto */}</div>
           </div>
           <div className="flex gap-6 w-full justify-start items-center">
             <div className="flex">
-              <div className="w-16 h-16 rounded-full -mr-3 bg-white"></div>
-              <div className="w-16 h-16 rounded-full -mr-3 bg-white"></div>
-              <div className="w-16 h-16 rounded-full bg-white"></div>
+              <div className="w-16 h-16 rounded-full -mr-3 bg-zinc-300"></div>
+              <div className="w-16 h-16 rounded-full -mr-3 bg-zinc-300"></div>
+              <div className="w-16 h-16 rounded-full bg-zinc-300"></div>
             </div>
             <div className="flex flex-col max-h-16 text-white opacity-80">
               <h2 className="text-xl">+100</h2>
