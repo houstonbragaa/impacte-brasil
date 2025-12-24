@@ -15,8 +15,8 @@ const Main = () => {
       <h1 className="text-secondary-blue text-4xl font-semibold">
         Conheça nossa história
       </h1>
-      <div className="flex h-[600px] w-full gap-6 justify-center">
-        <div className="w-[430px] h-full bg-white rounded-2xl">
+      <div className="flex lg:h-[600px] md:h-[500px] w-full gap-6 justify-center">
+        <div className="w-[430px] h-full bg-white rounded-3xl">
           {/* Video apresentando o impacte brasil */}
         </div>
 
@@ -29,9 +29,9 @@ const Main = () => {
             maior ecossistema de soluções integradas para o varejo no país.
           </p>
           <div className="grid grid-cols-2 grid-rows-1 gap-6 w-full h-full">
-            <div className="bg-white rounded-2xl">{/* Foto */}</div>
+            <div className="bg-white rounded-3xl">{/* Foto */}</div>
 
-            <div className="bg-white rounded-2xl">{/* Foto */}</div>
+            <div className="bg-white rounded-3xl">{/* Foto */}</div>
           </div>
           <div className="flex gap-6 w-full justify-start items-center">
             <div className="flex">

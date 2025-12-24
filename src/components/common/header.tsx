@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { LayoutContent } from "../layout/layout-content";
 import Link from "next/link";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { MenuIcon, X } from "lucide-react";
-import { useMenuScroll } from "@/hooks/use-menu-scroll";
+import { MenuIcon } from "lucide-react";
+import { useMenu, useMenuScroll } from "@/hooks/use-menu";
+import SidebarMenu from "./sidebarMenu";
 
 type HeaderProps = {
   isTransparent: "bg-transparent" | "bg-primary-green";
@@ -14,31 +14,9 @@ type HeaderProps = {
 
 const Header = ({ isTransparent }: HeaderProps) => {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
-  const [sidebarVisible, setSidebarVisible] = useState(false);
-
   const scrolled = useMenuScroll();
-  // Fechamento suave ao clicar fora
-  const handleOverlayClick = (
-    e: React.MouseEvent<HTMLDivElement, MouseEvent>
-  ) => {
-    if (e.target === e.currentTarget) {
-      setSidebarVisible(false);
-      setTimeout(() => setIsOpen(false), 300); // match duration
-    }
-  };
-
-  // Abrir sidebar
-  const openSidebar = () => {
-    setIsOpen(true);
-    setTimeout(() => setSidebarVisible(true), 10); // animação suave
-  };
-
-  // Fechar sidebar
-  const closeSidebar = () => {
-    setSidebarVisible(false);
-    setTimeout(() => setIsOpen(false), 300); // match duration
-  };
+  const { openSidebar, isOpen, overlayClick, closeSidebar, sidebarVisible } =
+    useMenu();
 
   return (
     <div
@@ -110,61 +88,11 @@ const Header = ({ isTransparent }: HeaderProps) => {
         </div>
         {/* Sidebar Mobile animado à direita */}
         {isOpen && (
-          <div
-            className="fixed inset-0 z-40 bg-black/70 flex justify-end"
-            onClick={handleOverlayClick}
-          >
-            <div
-              className={`w-64 h-full bg-primary-green p-6 pt-10 flex flex-col gap-6 shadow-lg relative transform transition-transform duration-300 ease-in-out
-                ${sidebarVisible ? "translate-x-0" : "translate-x-full"}`}
-            >
-              <button
-                className="absolute top-6 right-6 text-white hover:text-secondary-blue transition-colors"
-                onClick={closeSidebar}
-                aria-label="Fechar menu"
-              >
-                <X className="w-6 h-6" />
-              </button>
-              <Link
-                href="/"
-                className={`text-lg font-semibold text-left ${
-                  pathname === "/" ? "text-secondary-blue" : "text-white"
-                }`}
-                onClick={closeSidebar}
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className={`text-lg font-semibold text-left ${
-                  pathname === "/about" ? "text-secondary-blue" : "text-white"
-                }`}
-                onClick={closeSidebar}
-              >
-                Sobre
-              </Link>
-              <Link
-                href="/events"
-                className={`text-lg font-semibold text-left ${
-                  pathname === "/events" ? "text-secondary-blue" : "text-white"
-                }`}
-                onClick={closeSidebar}
-              >
-                Eventos
-              </Link>
-              <Link
-                href="/contacts"
-                className={`text-lg font-semibold text-left ${
-                  pathname === "/contacts"
-                    ? "text-secondary-blue"
-                    : "text-white"
-                }`}
-                onClick={closeSidebar}
-              >
-                Contatos
-              </Link>
-            </div>
-          </div>
+          <SidebarMenu
+            handleOverlayClick={() => overlayClick}
+            closeSidebar={() => closeSidebar}
+            sidebarVisible={sidebarVisible}
+          />
         )}
       </LayoutContent>
     </div>
