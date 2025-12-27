@@ -22,7 +22,7 @@ const AboutUs = () => {
               da consultoria tributária à operação, da gestão estratégica à
               inovação, da liderança à tecnologia aplicada.
             </p>
-            <div className="bg-primary-green w-full rounded-2xl">
+            <div className="bg-zinc-300 w-full rounded-2xl">
               {/* Foto de algo que representa a comunidade */}
             </div>
           </div>

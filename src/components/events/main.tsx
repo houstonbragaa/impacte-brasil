@@ -19,8 +19,8 @@ const Main = () => {
         <Image
           src="/gira-comunidade.png"
           alt="logo-gira-comunidade"
-          width={200}
-          height={200}
+          width={130}
+          height={130}
         />
         <h1 className="text-5xl font-semibold text-white text-center max-w-2xl leading-normal">
           A COMUNIDADE QUE GIRA O VAREJO COM ESTRATÉGIA
