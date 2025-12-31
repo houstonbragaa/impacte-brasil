@@ -1,11 +1,22 @@
 import Header from "@/components/common/header";
+import styles from "@/app/styles.module.css";
+import Main from "@/components/contacts/main";
+import Footer from "@/components/common/footer";
+import Image from "next/image";
 
 const ContactsPage = () => {
   return (
-    <div>
-      <Header isTransparent="bg-primary-green" />
-    </div>
+    <>
+      <div className="flex flex-col justify-center items-center">
+        <div className={`flex flex-col w-full ${styles.bgGradientHero}`}>
+          <Header isTransparent="bg-transparent" />
+          <Main />
+        </div>
+        <Image src="/gridhome.svg" alt="grid" fill className="opacity-35"/> 
+      </div>
+      <Footer />
+    </>
   );
-}
+};
 
-export default ContactsPage
+export default ContactsPage;
