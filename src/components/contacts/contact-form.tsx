@@ -12,7 +12,7 @@ const ContactForm = () => {
   }, []);
 
   return (
-    <div className=" flex flex-col w-2xl mt-32 mb-48 p-8 rounded-xl items-start">
+    <div className=" w-full">
       <Image 
         src="/impacte-logo.png"
         width={100}

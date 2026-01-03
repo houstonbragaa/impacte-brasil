@@ -8,7 +8,7 @@ const ContactsPage = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
-        <div className={`flex flex-col w-full ${styles.bgGradientHero}`}>
+        <div className={`flex flex-col h-screen w-full ${styles.bgGradientHero}`}>
           <Header isTransparent="bg-transparent" />
           <Main />
         </div>
