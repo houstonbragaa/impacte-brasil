@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full flex justify-start">
-          <p className="text-xl">© 2025 Impacte brasil.</p>
+          <p className="text-xl">© 2026 Impacte brasil.</p>
         </div>
       </footer>
     </LayoutContent>
