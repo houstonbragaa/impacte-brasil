@@ -40,7 +40,7 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <div className="w-full flex lg:justify-start justify-between lg:gap-30 items-start">
+        <div className="w-full flex md:flex-row  flex-col lg:justify-start justify-between gap-8 lg:gap-30 items-start">
           <div className="flex flex-col justify-start">
             <h2 className="mb-4 text-2xl font-normal">Endereço</h2>
             <div className="flex flex-col gap-2">
