@@ -1,5 +1,8 @@
-import Image from "next/image";
-import { LayoutContent, LayoutDesktop } from "@/components/layout/layout-content";
+
+import {
+  LayoutContent,
+  LayoutDesktop,
+} from "@/components/layout/layout-content";
 import {
   ArrowDownWideNarrow,
   Blocks,
@@ -17,7 +20,7 @@ const Benefits = () => {
             <h1 className="font-bold sm:text-4x mb-10 sm:mb-0 text-3xl text-center sm:text-left max-w-[300px]">
               Fique por dentro de nossos serviços
             </h1>
-            <Image src="/video.png" width={300} height={200} alt="video"/>
+            <div className="w-[300px] h-[180px] bg-zinc-300 rounded-3xl"></div>
           </div>
           <div className="sm:grid flex sm:mt-0 mt-10  flex-col sm:grid-cols-2 sm:grid-rows-2 justify-center">
             {/* Retangulo com linear gradiente destacado */}
