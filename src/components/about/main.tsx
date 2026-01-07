@@ -1,6 +1,7 @@
 import { LayoutContent } from "../layout/layout-content";
 import Image from "next/image";
 import styles from '@/app/styles.module.css'
+import VideoImpacte from "./video-impacte";
 
 const Main = () => {
   return (
@@ -16,9 +17,7 @@ const Main = () => {
         Conheça nossa história
       </h1>
       <div className="flex lg:h-[600px] md:h-[500px] w-full gap-6 justify-center">
-        <div className="w-[430px] h-full bg-zinc-300 rounded-3xl">
-          {/* Video apresentando o impacte brasil */}
-        </div>
+        <VideoImpacte />
 
         <div className="flex flex-col gap-10 w-[700px] h-full">
           <p className="text-white text-xl">
@@ -29,9 +28,23 @@ const Main = () => {
             maior ecossistema de soluções integradas para o varejo no país.
           </p>
           <div className="grid grid-cols-2 grid-rows-1 gap-6 w-full h-full">
-            <div className="bg-zinc-300 rounded-3xl">{/* Foto */}</div>
+            <div className="shadow-2xl relative bg-transparent border border-zinc-300 rounded-3xl">
+              <Image 
+                src="/photo-1.png"
+                fill
+                alt="photo-1"
+                className="mask-b-from-50% rounded-3xl object-cover"
+              />
+            </div>
 
-            <div className="bg-zinc-300 rounded-3xl">{/* Foto */}</div>
+            <div className="shadow-2xl relative bg-transparent border border-zinc-300 rounded-3xl">
+              <Image 
+                src="/photo-2.png"
+                fill
+                alt="photo-1"
+                className="mask-b-from-50% rounded-3xl object-cover"
+              />
+            </div>
           </div>
           <div className="flex gap-6 w-full justify-start items-center">
             <div className="flex">
