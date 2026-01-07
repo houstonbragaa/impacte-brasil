@@ -47,7 +47,7 @@ const HomePage = () => {
         </div>
         <div>
           <Image
-            src="/logo-orbit.png"
+            src="/logo-orbit-impacte.svg"
             width={600}
             height={600}
             alt="logo orbita"

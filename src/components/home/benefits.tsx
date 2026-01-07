@@ -10,6 +10,7 @@ import {
   HandFist,
 } from "lucide-react";
 import BenefitItem from "@/components/home/benefit-item";
+import Image from "next/image";
 
 const Benefits = () => {
   return (
@@ -20,7 +21,12 @@ const Benefits = () => {
             <h1 className="font-bold sm:text-4x mb-10 sm:mb-0 text-3xl text-center sm:text-left max-w-[300px]">
               Fique por dentro de nossos serviços
             </h1>
-            <div className="w-[300px] h-[180px] bg-zinc-300 rounded-3xl"></div>
+            <div className="relative w-[300px] h-[180px] bg-zinc-300 rounded-3xl">
+              <div className="absolute flex justify-center items-center -right-6 top-15 w-[50px] h-[50px] bg-primary-green rounded-full border-4 border-zinc-100">
+                <Image src="/logo-2.png" width={25} height={25} alt="logo-2"/>
+              </div>
+              <Image src="/image-benefits.jpg" width={300} height={200} alt="image benefits" className="rounded-3xl w-full h-full object-cover"/>
+            </div>
           </div>
           <div className="sm:grid flex sm:mt-0 mt-10  flex-col sm:grid-cols-2 sm:grid-rows-2 justify-center">
             {/* Retangulo com linear gradiente destacado */}
