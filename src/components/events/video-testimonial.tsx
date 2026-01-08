@@ -9,8 +9,8 @@ const VideoTestemonial = () => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
   return (
     <LayoutContent>
-      <LayoutDesktop className="flex flex-col gap-12 items-center mt-48">
-        <div className="relative w-3xl h-100  bg-transparent rounded-4xl border-2 border-amber-600 p-2">
+      <LayoutDesktop className="flex flex-col gap-12 items-center md:mt-48 mt-24">
+        <div className="relative md:w-3xl w-full md:h-100 h-[250px]  bg-transparent rounded-4xl border-2 border-amber-600 p-2">
           {showVideo ? (
             <video
               src="https://res.cloudinary.com/dpmmgqtzp/video/upload/v1767817382/aftermovie_final_horizontal_1_kjub52.mp4"

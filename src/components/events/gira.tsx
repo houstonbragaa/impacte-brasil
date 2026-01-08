@@ -4,7 +4,7 @@ import PhotosGira from "./photos-gira";
 const Gira = () => {
   return (
     <LayoutContent className="flex mt-48">
-      <LayoutDesktop className="space-y-48 text-center flex flex-col items-center">
+      <LayoutDesktop className="md:space-y-48 space-y-24 text-center flex flex-col items-center">
         <p className="text-xl max-w-[600px]">
           Acreditamos que nenhum supermercadista precisa enfrentar os desafios
           do setor sozinho.
