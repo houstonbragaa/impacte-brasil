@@ -11,7 +11,7 @@ const EventsPage = () => {
     <>
       <div className="flex flex-col justify-center items-center mb-48">
         <div
-          className={`flex flex-col w-full relative rounded-b-[200px] ${styles.bgGradientHero}`}
+          className={`flex flex-col w-full relative lg:rounded-b-[200px] rounded-b-[50px] ${styles.bgGradientHero}`}
         >
           <Header isTransparent="bg-transparent" />
           <Main />

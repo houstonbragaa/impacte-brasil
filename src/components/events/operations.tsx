@@ -5,19 +5,19 @@ import Image from "next/image";
 
 const Operations = () => {
   return (
-    <LayoutContent className="flex min-w-[1000px] flex-col mt-48">
-      <div className="space-y-24 flex flex-col items-center">
-        <h1 className="lg:text-4xl md:text-3xl text-xl font-semibold">
+    <LayoutContent className="flex flex-col mt-24 sm:mt-36">
+      <div className="space-y-12 sm:space-y-20 flex flex-col items-center">
+        <h1 className="text-xl sm:text-3xl lg:text-4xl font-semibold text-center">
           Como funciona
         </h1>
-        <LayoutDesktop className="flex flex-col gap-8 w-full">
+        <LayoutDesktop className="flex flex-col gap-6 sm:gap-8 w-full">
           {operations.map((operation, idx) => {
             const rightAlign = idx % 2 === 1;
-            const side = rightAlign ? "justify-end" : "justify-start";
+            const side = rightAlign ? "md:justify-end" : "md:justify-start";
             return (
               <div
                 key={operation.id}
-                className={`flex items-center gap-6 w-full ${side}`}
+                className={`flex flex-col md:flex-row items-center gap-4 md:gap-6 w-full ${side}`}
               >
                 {!rightAlign && (
                   <>
@@ -30,9 +30,9 @@ const Operations = () => {
                       alt="Seta"
                       width={60}
                       height={60}
-                      className={
+                      className={`hidden md:block lg:mr-48 ${
                         idx === operations.length - 1 ? "invisible" : ""
-                      }
+                      }`}
                     />
                   </>
                 )}
@@ -44,9 +44,9 @@ const Operations = () => {
                       width={60}
                       height={60}
                       style={{ transform: "scaleX(-1)" }}
-                      className={
+                      className={`hidden md:block lg:ml-48 ${
                         idx === operations.length - 1 ? "invisible" : ""
-                      }
+                      }`}
                     />
                     <OperationItem
                       icon={operation.icon}

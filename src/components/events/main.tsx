@@ -22,7 +22,7 @@ const Main = () => {
           width={130}
           height={130}
         />
-        <h1 className="text-5xl font-semibold text-white text-center max-w-2xl leading-normal">
+        <h1 className="md:text-5xl text-3xl font-semibold text-white text-center max-w-2xl leading-normal">
           A COMUNIDADE QUE GIRA O VAREJO COM ESTRATÉGIA
         </h1>
       </LayoutDesktop>
