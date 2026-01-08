@@ -7,7 +7,7 @@ const VideoImpacte = () => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
 
   return (
-    <div className="relative shadow-2xl p-2 w-[430px] h-full bg-transparent border border-white rounded-3xl">
+    <div className="relative shadow-2xl p-2 w-full max-w-[430px] md:w-[430px] h-[540px] md:h-full bg-transparent border border-white rounded-3xl shrink-0">
       {showVideo ? (
         <video
           src="https://res.cloudinary.com/dpmmgqtzp/video/upload/v1767813479/institucional_2_uksnkv.mp4"
@@ -34,7 +34,7 @@ const VideoImpacte = () => {
           >
             {/* Ícone Play simples */}
             <svg width={38} height={38} fill="currentColor" viewBox="0 0 38 38">
-              <circle cx="19" cy="19" r="19" fill="#1C274C" />
+              <circle cx="19" cy="19" r="19" fill="#04a859" />
               <polygon points="15,13 27,19 15,25" fill="#fff" />
             </svg>
           </button>

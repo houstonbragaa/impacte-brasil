@@ -41,7 +41,7 @@
   --color-foreground: var(--foreground);
   --color-primary-green: var(--primary);
   --color-secondary-blue: var(--secondary);
-  --color-gira: var(--gira)
+  --color-gira: var(--gira);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

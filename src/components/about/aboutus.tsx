@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "../common/button";
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
 
@@ -14,7 +15,7 @@ const AboutUs = () => {
       ></div>
       <LayoutContent>
         <LayoutDesktop className="flex flex-col space-y-24 mt-42">
-          <div className="grid grid-cols-2 gap-24 h-[300px] w-full">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-24 h-[300px] w-full">
             <p className="text-xl">
               Aqui, não entregamos serviços avulsos. Entregamos transformação.
               Com um portfólio robusto que conecta 14 empresas especializadas,
@@ -22,8 +23,13 @@ const AboutUs = () => {
               da consultoria tributária à operação, da gestão estratégica à
               inovação, da liderança à tecnologia aplicada.
             </p>
-            <div className="bg-zinc-300 w-full rounded-2xl">
-              {/* Foto de algo que representa a comunidade */}
+            <div className="relative shadow-2xl bg-zinc-300 w-full max-w-[500px] rounded-2xl">
+              <Image 
+                src="/photo-about.JPG"
+                fill
+                alt="photo-about"
+                className="object-cover rounded-2xl"
+              />
             </div>
           </div>
           <div className="flex flex-col justify-center items-center gap-8">
