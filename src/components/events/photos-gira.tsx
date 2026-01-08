@@ -8,6 +8,7 @@ const PhotosGira = () => {
           src="/image-gira1.jpg"
           alt="image gira"
           fill
+          loading="lazy"
           className="rounded-4xl object-cover mask-b-from-50%"
         />
       </div>
@@ -16,6 +17,7 @@ const PhotosGira = () => {
           src="/image-gira2.jpg"
           alt="image gira"
           fill
+          loading="lazy"
           className="rounded-4xl object-cover mask-b-from-50%"
         />
       </div>
@@ -25,6 +27,7 @@ const PhotosGira = () => {
           src="/image-gira3.jpg"
           alt="image gira"
           fill
+          loading="lazy"
           className="rounded-4xl object-cover mask-b-from-50%"
         />
       </div>
@@ -33,6 +36,7 @@ const PhotosGira = () => {
           src="/image-gira4.jpg"
           alt="image gira"
           fill
+          loading="lazy"
           className="rounded-4xl object-cover mask-b-from-50%"
         />
       </div>

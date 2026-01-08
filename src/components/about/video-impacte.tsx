@@ -23,8 +23,9 @@ const VideoImpacte = () => {
             src="/capa-video-impacte.png"
             alt="Capa retirada do vídeo"
             fill
+            loading="lazy"
             style={{ objectFit: "cover" }}
-            className="w-full h-full rounded-3xl object-cover mask-b-from-40%"
+            className="w-full h-full p-2 rounded-3xl object-cover mask-b-from-40%"
           />
           <button
             className="absolute cursor-pointer z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/80 rounded-full p-4 shadow-lg hover:bg-white transition"

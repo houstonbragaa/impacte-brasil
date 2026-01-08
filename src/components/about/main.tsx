@@ -33,7 +33,8 @@ const Main = () => {
                 src="/photo-1.png"
                 fill
                 alt="photo-1"
-                className="mask-b-from-50% rounded-3xl object-cover"
+                loading="lazy"
+                className="mask-b-from-50% p-2 rounded-3xl object-cover"
               />
             </div>
 
@@ -42,7 +43,8 @@ const Main = () => {
                 src="/photo-2.png"
                 fill
                 alt="photo-1"
-                className="mask-b-from-50% rounded-3xl object-cover"
+                loading="lazy"
+                className="mask-b-from-50% p-2 rounded-3xl object-cover"
               />
             </div>
           </div>
