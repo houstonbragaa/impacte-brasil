@@ -31,7 +31,7 @@ const Header = ({ isTransparent }: HeaderProps) => {
             className="md:w-[300px] w-[200px] mb-2"
             height={40}
             alt="logo"
-            src="/logo.svg"
+            src="/logo.png"
           />
           <div className="md:flex hidden gap-9">
             <Link
