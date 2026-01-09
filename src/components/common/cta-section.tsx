@@ -8,7 +8,7 @@ const CtaSection = () => {
       className={`${styles.bgGradientHeroSecondary} relative overflow-hidden h-[400px] flex flex-col justify-center items-center mt-48 gap-10`}
     >
       <Image
-        src="/gridhome.svg"
+        src="/gridhome.png"
         alt="grid"
         width={1000}
         height={1000}

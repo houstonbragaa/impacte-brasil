@@ -14,7 +14,7 @@ const Main = () => {
           className="animate-bounce mt-2"
         />
       </div>
-      <Image src="/gridhome.svg" alt="grid" fill className="opacity-25" />
+      <Image src="/gridhome.png" alt="grid" fill className="opacity-25" />
       <LayoutDesktop className="flex flex-col justify-center items-center gap-16">
         <Image
           src="/gira-comunidade.png"

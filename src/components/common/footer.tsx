@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className="flex flex-col gap-14">
         <div className="w-full flex justify-start">
           <Image
-            src="/logofooter.svg"
+            src="/logofooter.png"
             alt="logofooter"
             width={300}
             height={39}
@@ -19,7 +19,7 @@ const Footer = () => {
             <Image
               width={32}
               height={32}
-              src="/LinkedinLogo.svg"
+              src="/LinkedinLogo.png"
               alt="Linkedin"
             />
           </Link>
@@ -27,7 +27,7 @@ const Footer = () => {
             <Image
               width={32}
               height={32}
-              src="/InstagramLogo.svg"
+              src="/InstagramLogo.png"
               alt="Linkedin"
             />
           </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
             <Image
               width={32}
               height={32}
-              src="/YoutubeLogo.svg"
+              src="/YoutubeLogo.png"
               alt="Linkedin"
             />
           </Link>

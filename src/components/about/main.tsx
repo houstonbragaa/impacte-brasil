@@ -9,7 +9,7 @@ const Main = () => {
       <Image
         alt="bg hero"
         fill={true}
-        src="/gridhome.svg"
+        src="/gridhome.png"
         className={`opacity-40 ${styles.bgImage}`}
         priority={true}
       />

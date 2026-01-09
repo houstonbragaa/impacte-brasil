@@ -28,7 +28,7 @@ const HomePage = () => {
         <Image
           alt="bg hero"
           fill={true}
-          src="/gridhome.svg"
+          src="/gridHome.png"
           className={`opacity-40 ${styles.bgImage}`}
           priority={true}
         />
