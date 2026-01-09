@@ -89,8 +89,8 @@ const Header = ({ isTransparent }: HeaderProps) => {
         {/* Sidebar Mobile animado à direita */}
         {isOpen && (
           <SidebarMenu
-            handleOverlayClick={() => overlayClick}
-            closeSidebar={() => closeSidebar}
+            handleOverlayClick={overlayClick}
+            closeSidebar={closeSidebar}
             sidebarVisible={sidebarVisible}
           />
         )}

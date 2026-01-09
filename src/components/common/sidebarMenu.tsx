@@ -1,17 +1,21 @@
-"use client"
+"use client";
 
 import { X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 interface SidebarProps {
-  handleOverlayClick: () => void
-  sidebarVisible: boolean
-  closeSidebar: () => void
+  handleOverlayClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+  sidebarVisible: boolean;
+  closeSidebar: () => void;
 }
 
-const SidebarMenu = ({handleOverlayClick, sidebarVisible, closeSidebar}: SidebarProps) => {
-  const pathname = usePathname()
+const SidebarMenu = ({
+  handleOverlayClick,
+  sidebarVisible,
+  closeSidebar,
+}: SidebarProps) => {
+  const pathname = usePathname();
   return (
     <div
       className="fixed inset-0 z-40 bg-black/70 flex justify-end"
