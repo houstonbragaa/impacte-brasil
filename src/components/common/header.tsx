@@ -4,7 +4,7 @@ import Image from "next/image";
 import { LayoutContent } from "../layout/layout-content";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MenuIcon } from "lucide-react";
+import { BookText, Globe, HomeIcon, MenuIcon, UsersRound } from "lucide-react";
 import { useMenu, useMenuScroll } from "@/hooks/use-menu";
 import SidebarMenu from "./sidebarMenu";
 
@@ -36,42 +36,46 @@ const Header = ({ isTransparent }: HeaderProps) => {
           <div className="md:flex hidden gap-9">
             <Link
               href="/"
-              className={
+              className={`flex items-center gap-2 ${
                 pathname === "/"
                   ? "text-secondary-blue font-bold"
                   : "text-white"
-              }
+              }`}
             >
+              <HomeIcon />
               Home
             </Link>
             <Link
               href="/about"
-              className={
+              className={`flex items-center gap-2 ${
                 pathname === "/about"
                   ? "text-secondary-blue font-bold"
                   : "text-white"
-              }
+              }`}
             >
+              <UsersRound />
               Sobre
             </Link>
             <Link
               href="/events"
-              className={
+              className={`flex items-center gap-2 ${
                 pathname === "/events"
                   ? "text-secondary-blue font-bold"
                   : "text-white"
-              }
+              }`}
             >
+              <Globe />
               Eventos
             </Link>
             <Link
               href="/contacts"
-              className={
+              className={`flex items-center gap-2 ${
                 pathname === "/contacts"
                   ? "text-secondary-blue font-bold"
                   : "text-white"
-              }
+              }`}
             >
+              <BookText />
               Contatos
             </Link>
           </div>
