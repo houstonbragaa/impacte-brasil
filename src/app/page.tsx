@@ -14,7 +14,7 @@ import Footer from "@/components/common/footer";
 const HomePage = () => {
   return (
     <>
-      <div className={`flex flex-col w-full relative ${styles.bgGradientHero}`}>
+      <div className={`flex flex-col overflow-x-hidden w-full relative ${styles.bgGradientHero}`}>
         <Header isTransparent="bg-transparent" />
         <Image
           alt="bg hero"
