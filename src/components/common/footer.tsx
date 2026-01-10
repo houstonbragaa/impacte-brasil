@@ -12,6 +12,7 @@ const Footer = () => {
             alt="logofooter"
             width={300}
             height={39}
+            className="md:h-[39px] md:w-[300px] h-[29px] w-[200px]"
           />
         </div>
         <div className="w-full flex gap-6">
@@ -42,10 +43,10 @@ const Footer = () => {
         </div>
         <div className="w-full flex md:flex-row  flex-col lg:justify-start justify-between gap-8 lg:gap-30 items-start">
           <div className="flex flex-col justify-start">
-            <h2 className="mb-4 text-2xl font-normal">Endereço</h2>
+            <h2 className="mb-4 md:text-2xl text-xl font-normal">Endereço</h2>
             <div className="flex flex-col gap-2">
-              <h3 className="text-gray-400 text-xl">Rod. Admar Gonzaga, 440</h3>
-              <h3 className="text-gray-400 text-xl">
+              <h3 className="text-gray-400 md:text-xl text-md">Rod. Admar Gonzaga, 440</h3>
+              <h3 className="text-gray-400 md:text-xl text-md">
                 Torre Pacifico – Itacorubi
               </h3>
               <h3 className="text-gray-400 text-xl">Florianópolis/SC</h3>
@@ -53,52 +54,49 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col justify-start">
-            <h2 className="mb-4 text-2xl font-normal">Ecossistema</h2>
+            <h2 className="mb-4 md:text-2xl text-xl font-normal">Ecossistema</h2>
             <div className="flex flex-col gap-2">
-              <Link href="/" className="text-gray-400 text-xl">
+              <Link href="/" className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md">
                 Sobre nós
               </Link>
-              <Link href="/" className="text-gray-400 text-xl">
-                Sobre nós
+              <Link href="/" className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md">
+                Gira comunidade
               </Link>
-              <Link href="/" className="text-gray-400 text-xl">
-                Sobre nós
+              <Link href="/" className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md">
+                Suporte
               </Link>
             </div>
           </div>
 
           <div className="flex flex-col justify-start">
-            <h2 className="mb-4 text-2xl font-normal">Ecossistema</h2>
+            <h2 className="mb-4 md:text-2xl text-xl font-normal">Contatos</h2>
             <div className="flex flex-col gap-2">
-              <Link href="/" className="text-gray-400 text-xl">
-                Sobre nós
+              <Link href="/" className="text-gray-400 hover:text-gray-400/50 md:text-xl text-mdl">
+                Instagram
               </Link>
-              <Link href="/" className="text-gray-400 text-xl">
-                Sobre nós
+              <Link href="/" className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md">
+                LinkedIn
               </Link>
-              <Link href="/" className="text-gray-400 text-xl">
-                Sobre nós
+              <Link href="/" className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md">
+                WhatsApp
               </Link>
             </div>
           </div>
 
           <div className="flex flex-col justify-start">
-            <h2 className="mb-4 text-2xl font-normal">Ecossistema</h2>
+            <h2 className="mb-4 md:text-2xl text-xl font-normal">Políticas</h2>
             <div className="flex flex-col gap-2">
-              <Link href="/" className="text-gray-400 text-xl">
-                Sobre nós
+              <Link href="/" className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md">
+                Privacidade
               </Link>
-              <Link href="/" className="text-gray-400 text-xl">
-                Sobre nós
-              </Link>
-              <Link href="/" className="text-gray-400 text-xl">
-                Sobre nós
+              <Link href="/" className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md">
+                Termos de uso
               </Link>
             </div>
           </div>
         </div>
         <div className="w-full flex justify-start">
-          <p className="text-xl">© 2026 Impacte brasil.</p>
+          <p className="text-md">© 2026 Impacte brasil.</p>
         </div>
       </footer>
     </LayoutContent>
