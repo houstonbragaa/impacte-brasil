@@ -49,7 +49,7 @@ const Footer = () => {
               <h3 className="text-gray-400 md:text-xl text-md">
                 Torre Pacifico – Itacorubi
               </h3>
-              <h3 className="text-gray-400 text-xl">Florianópolis/SC</h3>
+              <h3 className="text-gray-400 md:text-xl text-mdl">Florianópolis/SC</h3>
             </div>
           </div>
 
