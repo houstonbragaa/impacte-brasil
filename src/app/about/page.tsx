@@ -8,7 +8,7 @@ import Footer from "@/components/common/footer";
 const AboutPage = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center mb-48">
+      <div className="flex flex-col justify-center items-center mb-48 overflow-x-hidden">
         <div
           className={`flex flex-col w-full relative ${styles.bgGradientHero}`}
         >
