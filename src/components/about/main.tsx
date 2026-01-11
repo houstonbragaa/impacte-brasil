@@ -20,7 +20,7 @@ const Main = () => {
         <VideoImpacte />
 
         <div className="flex flex-col gap-6 sm:gap-10 w-full md:w-[420px] lg:w-[700px] h-full">
-          <p className="text-white text-xl">
+          <p className="text-white/90 md:text-xl text-sm">
             A Impacte Brasil nasceu com um propósito firme: transformar o varejo
             supermercadista em um setor mais forte, estratégico e sustentável.
             Fundada por Jefferson Rossi e Vitor Santos, empresários com mais de

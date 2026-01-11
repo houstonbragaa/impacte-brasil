@@ -14,16 +14,16 @@ const AboutUs = () => {
     `}
       ></div>
       <LayoutContent>
-        <LayoutDesktop className="flex flex-col space-y-24 mt-42">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-24 h-[300px] w-full">
-            <p className="text-xl">
+        <LayoutDesktop className="flex flex-col space-y-24 md:mt-42 mt-24">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-24 md:h-[300px] h-full w-full">
+            <p className="md:text-xl text:sm">
               Aqui, não entregamos serviços avulsos. Entregamos transformação.
               Com um portfólio robusto que conecta 14 empresas especializadas,
               atuamos de forma prática nas áreas mais sensíveis do supermercado:
               da consultoria tributária à operação, da gestão estratégica à
               inovação, da liderança à tecnologia aplicada.
             </p>
-            <div className="relative shadow-2xl bg-zinc-300 w-full max-w-[500px] rounded-2xl">
+            <div className="relative shadow-2xl bg-zinc-300 w-full h-[250px] max-w-[500px] rounded-2xl">
               <Image 
                 src="/photo-about.JPG"
                 fill
@@ -33,7 +33,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center gap-8">
-            <p className="max-w-[800px] text-xl text-center">
+            <p className="max-w-[800px] md:text-xl text-sm md:text-center text-left">
               Nosso papel é ser o elo entre o supermercadista e o próximo nível
               do seu negócio. Ajudamos líderes a enxergar o invisível, corrigir
               o que trava o crescimento e implementar soluções com segurança,

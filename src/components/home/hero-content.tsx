@@ -40,7 +40,7 @@ const HeroContent = () => {
           />
         </svg>
         <LayoutContent className="bg-white flex justify-center items-center pb-28 text-center">
-          <p className="max-w-3xl md:text-xl text-md font-semibold md:pt-0 pt-12">
+          <p className="max-w-3xl md:text-xl text-sm font-semibold md:pt-0 pt-12">
             Na Impacte, os desafios do dia a dia se transformam em oportunidades
             práticas de evolução  com apoio estratégico, comunidade ativa e
             soluções integradas que entregam resultado real.

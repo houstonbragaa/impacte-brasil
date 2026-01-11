@@ -11,11 +11,11 @@ const Gira = () => {
         </p>
         <PhotosGira />
         <div className="space-y-8 max-w-3xl">
-          <p className="text-xl ">
+          <p className="md:text-xl text-sm">
             No GIRA, criamos um ambiente seguro onde estratégias, experiências e
             resultados são compartilhados com quem vive o mesmo jogo.
           </p>
-          <p className="text-xl">
+          <p className="md:text-xl text-sm">
             Aqui, construímos soluções juntos com troca real, apoio mútuo e
             aprendizados práticos que aceleram a evolução de todos os
             envolvidos.

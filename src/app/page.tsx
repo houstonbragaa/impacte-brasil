@@ -39,8 +39,8 @@ const HomePage = () => {
       <div
         className={`${styles.bgGradientHeroSecondary} md:h-[400px] h-[800px] flex md:flex-row gap-10 md:gap-0 flex-col-reverse  justify-center items-center`}
       >
-        <div className="text-white flex flex-col items-center md:gap-0 gap-6 md:items-start">
-          <p className="text-center md:text-left md:max-w-[480px] max-w-[330px] text-md md:text-xl">
+        <div className="text-white/90 flex flex-col items-center md:gap-0 gap-6 md:items-start">
+          <p className="text-center md:text-left md:max-w-[480px] max-w-[330px] text-sm md:text-xl">
             Juntos, enfrentamos gargalos reais, aceleramos decisões e
             construímos soluções completas e integradas para transformar o
             varejo supermercadista de forma prática e contínua.
