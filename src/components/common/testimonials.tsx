@@ -11,10 +11,10 @@ const Testimonials = () => {
           <Image src="/notbook-impacte.jpg" fill alt="not-impacte" className="rounded-3xl w-full h-full object-cover"/>
         </div>
 
-        <h1 className="text-primary-green text-left pl-2 font-normal text-4xl w-full leading-relaxed">
+        <h1 className="text-primary-green text-left pl-2 font-normal text-4xl w-full md:leading-relaxed">
           São mais de 100 supermercados atendidos por todo Brasil
         </h1>
-        <div className="sm:absolute sm:-bottom-20 sm:right-0 sm:flex sm:flex-row flex-col space-y-5 gap-3 sm:mr-[120px] mr-0">
+        <div className="sm:absolute sm:-bottom-32 sm:right-0 sm:flex sm:flex-row flex-col space-y-5 gap-3 sm:mr-[120px] mr-0">
           <TestimonialItem />
           <TestimonialItem />
         </div>
