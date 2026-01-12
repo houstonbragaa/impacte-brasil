@@ -57,7 +57,7 @@ const Faq = () => {
           alt="logo"
           className="sm:w-[300px] sm:h-[39px] w-[200px] h-[28px]"
         />
-        <h2 className="text-3xl font-semibold">Perguntas frequentes</h2>
+        <h2 className="text-3xl text-center font-semibold">Perguntas frequentes</h2>
         <LayoutDesktop className="flex flex-col gap-5 w-full max-w-5xl">
           {QUESTIONS.map(({ id, question, response }: QuestionType) => (
             <FaqItem key={id} question={question} response={response} />
