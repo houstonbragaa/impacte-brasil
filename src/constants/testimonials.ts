@@ -2,16 +2,16 @@ const testimonials = [
   {
     id: 1,
     name: "Thayná",
-    supermarket: "União Supermarket",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis sit corporis soluta incidunt esse iste nulla excepturixs mollitia debitis cupiditate et.",
-    avatar: "djad"
+    supermarket: "União Super Market",
+    text: "Quero agradecer a equipe da Impacte Brasil, pois foi graças ao apoio e dedicação deles que nos fez nossa empresa crescer e evoluir dentro do mercado.",
+    avatar: "/avatar-testimonial-2.png"
   },
   {
     id: 2,
-    name: "Houston",
-    supermarket: "djsdkajskd",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perferendis sit corporis soluta incidunt esse iste nulla excepturixs mollitia debitis cupiditate et.",
-    avatar: "djad"
+    name: "Áurea",
+    supermarket: "Supermercado Forte",
+    text: "O evento gira café foi maravilhoso, vários assuntos importantes que foram tratados na qual ajudou muitas pessoas que estavam presentes, absorvendo pontos que estão em alta no mercado.",
+    avatar: "/avatar-testimonial-1.png"
   },
 ];
 
