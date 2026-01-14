@@ -1,24 +1,9 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
+import { useVideo } from "@/hooks/use-video";
 
 const VideoImpacte = () => {
-  const [autoPlay, setAutoPlay] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 768px)");
-
-    const handleChange = () => {
-      setAutoPlay(mediaQuery.matches);
-    };
-
-    handleChange(); // executa na montagem
-    mediaQuery.addEventListener("change", handleChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-    };
-  }, []);
+  const autoPlay = useVideo();
 
   return (
     <div className="relative shadow-2xl p-2 w-full max-w-[430px] md:w-[430px] h-[540px] md:h-full bg-transparent border border-white rounded-3xl shrink-0">
