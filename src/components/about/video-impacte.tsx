@@ -28,7 +28,7 @@ const VideoImpacte = () => {
         className="w-full h-full rounded-3xl object-cover"
         controls
         autoPlay={autoPlay}
-        muted
+        muted={autoPlay}
         playsInline
       />
     </div>
