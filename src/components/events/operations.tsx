@@ -2,10 +2,12 @@ import { operations } from "@/constants/operations";
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
 import OperationItem from "./operation-item";
 import Image from "next/image";
+import Glow from "../common/glow";
 
 const Operations = () => {
   return (
-    <LayoutContent className="flex flex-col mt-24 sm:mt-36">
+    <LayoutContent className="relative flex flex-col mt-24 sm:mt-36">
+      <Glow className="-bottom-100 -right-80" />
       <div className="space-y-12 sm:space-y-20 flex flex-col items-center">
         <h1 className="text-xl sm:text-3xl lg:text-4xl font-semibold text-center">
           Como funciona

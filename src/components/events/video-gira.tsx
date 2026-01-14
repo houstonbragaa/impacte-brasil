@@ -4,11 +4,13 @@ import { useState } from "react";
 import Button from "../common/button";
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
 import Image from "next/image";
+import Glow from "../common/glow";
 
 const VideoGira = () => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
   return (
-    <LayoutContent>
+    <LayoutContent className="relative">
+      <Glow className="-bottom-50 -left-60" />
       <LayoutDesktop className="flex flex-col gap-12 items-center md:mt-48 mt-24">
         <div className="relative md:w-3xl w-full md:h-100 h-[250px]  bg-transparent rounded-4xl border-2 border-amber-600 p-2">
           {showVideo ? (
