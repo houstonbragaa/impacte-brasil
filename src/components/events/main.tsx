@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ArrowDown from "@/assets/arrowdownhome.svg";
+
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
 
 const Main = () => {
@@ -10,7 +10,7 @@ const Main = () => {
           width={36}
           height={36}
           alt="arrow down"
-          src={ArrowDown}
+          src="/arrowdownhome.png"
           className="animate-bounce mt-2"
         />
       </div>

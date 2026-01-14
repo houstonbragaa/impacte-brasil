@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "@/components/common/button";
 import { LayoutContent } from "@/components/layout/layout-content";
-import ArrowDown from "@/assets/arrowdownhome.svg";
+
 
 const HeroContent = () => {
   return (
@@ -22,7 +22,7 @@ const HeroContent = () => {
             width={36}
             height={36}
             alt="arrow down"
-            src={ArrowDown}
+            src="/arrowdownhome.png"
             className="animate-bounce mt-2"
           />
         </div>
