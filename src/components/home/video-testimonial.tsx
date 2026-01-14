@@ -3,8 +3,11 @@
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
 
 import Glow from "../common/glow";
+import { useVideo } from "@/hooks/use-video";
 
 const VideoTestemonial = () => {
+  const autoPlay = useVideo();
+
   return (
     <LayoutContent className="relative">
       <Glow className="right-0" />
@@ -16,8 +19,8 @@ const VideoTestemonial = () => {
             title="Impacte Brasil - Vídeo de apresentação"
             className="w-full h-full rounded-4xl object-cover md:object-contain"
             controls
-            muted
-            autoPlay
+            muted={autoPlay}
+            autoPlay={autoPlay}
             playsInline
           />
         </div>
