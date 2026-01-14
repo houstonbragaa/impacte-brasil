@@ -1,10 +1,12 @@
+import Glow from "../common/glow";
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
 import SolutionItem from "./solution-item";
 import { solutions } from "@/constants/solutions";
 
 const Solutions = () => {
   return (
-    <LayoutContent>
+    <LayoutContent className="relative">
+      <Glow className="bottom-0 -left-50"/>
       <LayoutDesktop className="md:mt-48 mt-24 flex flex-col items-center space-y-20">
         <h1 className="text-4xl font-semibold">Soluções</h1>
         <h1 className="text-primary-green font-normal md:text-4xl text-3xl md:max-w-[600px] max-w-[380px] text-center">

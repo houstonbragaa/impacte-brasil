@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "../common/button";
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
+import Glow from "../common/glow";
 
 const AboutUs = () => {
   return (
@@ -13,7 +14,8 @@ const AboutUs = () => {
       animate-bounce
     `}
       ></div>
-      <LayoutContent>
+      <LayoutContent className="relative">
+        <Glow className="bottom-0 -left-50"/>
         <LayoutDesktop className="flex flex-col space-y-24 md:mt-42 mt-24">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-24 md:h-[300px] h-full w-full">
             <p className="md:text-xl text:sm">
@@ -32,6 +34,7 @@ const AboutUs = () => {
               />
             </div>
           </div>
+          <Glow className="-bottom-150 -right-50"/>
           <div className="flex flex-col justify-center items-center gap-8">
             <p className="max-w-[800px] md:text-xl text-sm md:text-center text-left">
               Nosso papel é ser o elo entre o supermercadista e o próximo nível
