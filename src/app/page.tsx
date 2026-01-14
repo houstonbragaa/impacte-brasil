@@ -10,6 +10,8 @@ import Faq from "@/components/home/faq";
 import Testimonials from "@/components/common/testimonials";
 import CtaSection from "@/components/common/cta-section";
 import Footer from "@/components/common/footer";
+import VideoTestemonial from "@/components/home/video-testimonial";
+
 
 const HomePage = () => {
   return (
@@ -67,6 +69,7 @@ const HomePage = () => {
       </div>
       <Faq />
       <Testimonials />
+      <VideoTestemonial />
       <CtaSection />
       <Footer />
     </div>

@@ -4,7 +4,7 @@ import Footer from "@/components/common/footer";
 import Main from "@/components/events/main";
 import Gira from "@/components/events/gira";
 import Operations from "@/components/events/operations";
-import VideoTestemonial from "@/components/events/video-testimonial";
+import VideoGira from "@/components/events/video-gira";
 
 const EventsPage = () => {
   return (
@@ -15,11 +15,10 @@ const EventsPage = () => {
         >
           <Header isTransparent="bg-transparent" />
           <Main />
-          
         </div>
         <Gira />
         <Operations />
-        <VideoTestemonial />
+        <VideoGira />
       </div>
       <Footer />
     </>

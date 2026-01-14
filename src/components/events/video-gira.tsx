@@ -5,7 +5,7 @@ import Button from "../common/button";
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
 import Image from "next/image";
 
-const VideoTestemonial = () => {
+const VideoGira = () => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
   return (
     <LayoutContent>
@@ -58,4 +58,4 @@ const VideoTestemonial = () => {
   );
 };
 
-export default VideoTestemonial;
+export default VideoGira;
