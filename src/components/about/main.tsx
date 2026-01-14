@@ -50,14 +50,35 @@ const Main = () => {
           </div>
           <div className="flex gap-4 sm:gap-6 w-full justify-start items-center mt-64 sm:mt-0">
             <div className="flex">
-              <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full -mr-2 sm:-mr-3 bg-zinc-300"></div>
-              <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full -mr-2 sm:-mr-3 bg-zinc-300"></div>
-              <div className="w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-zinc-300"></div>
+              <div className="relative w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full -mr-2 sm:-mr-3 bg-zinc-300">
+                <Image 
+                  src="/uniao-avatar.png"
+                  fill
+                  alt="uniao"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full -mr-2 sm:-mr-3 bg-zinc-300">
+              <Image 
+                  src="/s-avatar.png"
+                  fill
+                  alt="uniao"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-zinc-300">
+              <Image 
+                  src="/angeloni-avatar.png"
+                  fill
+                  alt="uniao"
+                  className="object-cover"
+                />
+              </div>
             </div>
             <div className="flex flex-col max-h-16 text-white opacity-80">
               <h2 className="text-lg sm:text-xl">+100</h2>
               <div className="flex flex-col">
-                <span className="text-xs sm:text-sm">Supermercadistas</span>
+                <span className="text-xs sm:text-sm">Supermercados</span>
                 <p className="text-[10px] sm:text-xs">Atendidos</p>
               </div>
             </div>
