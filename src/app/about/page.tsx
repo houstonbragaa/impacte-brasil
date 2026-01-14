@@ -10,7 +10,7 @@ const AboutPage = () => {
     <>
       <div className="flex flex-col justify-center items-center mb-48 overflow-x-hidden">
         <div
-          className={`flex flex-col w-full relative ${styles.bgGradientHero}`}
+          className={`flex flex-col w-full lg:h-screen relative ${styles.bgGradientHero}`}
         >
           <Header isTransparent="bg-transparent" />
           <Main />
