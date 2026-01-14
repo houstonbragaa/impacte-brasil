@@ -11,7 +11,7 @@ const Glow = ({className}: GlowTypes) => {
       alt="glow"
       width={900}
       height={900}
-      className={`${className} absolute`}
+      className={`${className} absolute -z-10 opacity-75 md:block hidden`}
     />
   )
 }

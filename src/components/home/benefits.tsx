@@ -11,10 +11,12 @@ import {
 } from "lucide-react";
 import BenefitItem from "@/components/home/benefit-item";
 import Image from "next/image";
+import Glow from "../common/glow";
 
 const Benefits = () => {
   return (
-    <LayoutDesktop className="mt-48 flex justify-center">
+    <LayoutDesktop className="mt-48 flex justify-center relative">
+      <Glow />
       <LayoutContent className="w-7xl">
         <div className="bg-zinc-100 w-full sm:h-[500px] h-full sm:rounded-[96px] rounded-4xl flex items-center flex-col sm:flex-row justify-around sm:p-12 p-6">
           <div className="flex flex-col gap-4 sm:justify-start justify-center">

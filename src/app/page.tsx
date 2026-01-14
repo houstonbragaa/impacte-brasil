@@ -11,6 +11,7 @@ import Testimonials from "@/components/common/testimonials";
 import CtaSection from "@/components/common/cta-section";
 import Footer from "@/components/common/footer";
 import VideoTestemonial from "@/components/home/video-testimonial";
+import Glow from "@/components/common/glow";
 
 
 
@@ -62,7 +63,8 @@ const HomePage = () => {
       </div>
       <Results />
       <Benefits />
-      <div className="flex flex-col items-center justify-center mt-48 gap-8">
+      <div className="flex flex-col items-center justify-center relative mt-48 gap-8">
+        <Glow className="-right-20 top-0"/>
         <h1 className="sm:text-4xl text-3xl font-semibold text-center">
           Pronto para virar essa chave?
         </h1>
