@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useVideo = () => {
-  const [autoPlay, setAutoPlay] = useState(false);
+  const [autoPlay, setAutoPlay] = useState<boolean>(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 768px)");
