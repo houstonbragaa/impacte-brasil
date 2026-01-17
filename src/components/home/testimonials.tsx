@@ -1,15 +1,16 @@
 import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
-import TestimonialItem from "../home/testimonial-item";
+import TestimonialItem from "./testimonial-item";
 import Image from "next/image";
 import testimonials from "@/constants/testimonials";
 import { TestimonialsTypes } from "@/types/home-types";
-import Glow from "./glow";
+import Glow from "../common/glow";
+import Title from "../common/title";
 
 const Testimonials = () => {
   return (
     <LayoutDesktop className="relative flex flex-col items-center m-auto mt-48 max-w-7xl space-y-16">
-      <Glow className="-left-80"/>
-      <h1 className="sm:text-4xl text-3xl font-semibold">Depoimentos</h1>
+      <Glow className="-left-80" />
+      <Title text="Depoimentos" color=""/>
       <LayoutContent className="grid sm:grid-cols-2 items-start relative w-full gap-4">
         <div className="relative sm:h-[350px] h-[280px] w-full bg-primary-green rounded-3xl">
           <Image

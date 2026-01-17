@@ -3,15 +3,14 @@ import { LayoutContent, LayoutDesktop } from "../layout/layout-content";
 import OperationItem from "./operation-item";
 import Image from "next/image";
 import Glow from "../common/glow";
+import Title from "../common/title";
 
 const Operations = () => {
   return (
     <LayoutContent className="relative flex flex-col mt-24 sm:mt-36">
-      <Glow className="-bottom-100 -right-80" />
+      <Glow className="-bottom-100 -right-48" />
       <div className="space-y-12 sm:space-y-20 flex flex-col items-center">
-        <h1 className="text-xl sm:text-3xl lg:text-4xl font-semibold text-center">
-          Como funciona
-        </h1>
+        <Title text="Como funciona" color=""/>
         <LayoutDesktop className="flex flex-col gap-6 sm:gap-8 w-full">
           {operations.map((operation, idx) => {
             const rightAlign = idx % 2 === 1;

@@ -7,13 +7,11 @@ import Button from "@/components/common/button";
 import Results from "@/components/home/results";
 import Benefits from "@/components/home/benefits";
 import Faq from "@/components/home/faq";
-import Testimonials from "@/components/common/testimonials";
+import Testimonials from "@/components/home/testimonials";
 import CtaSection from "@/components/common/cta-section";
 import Footer from "@/components/common/footer";
 import VideoTestemonial from "@/components/home/video-testimonial";
 import Glow from "@/components/common/glow";
-
-
 
 const HomePage = () => {
   return (
@@ -64,7 +62,7 @@ const HomePage = () => {
       <Results />
       <Benefits />
       <div className="flex flex-col items-center justify-center relative mt-48 gap-8">
-        <Glow className="-right-20 top-0"/>
+        <Glow className="-right-20 top-0" />
         <h1 className="sm:text-4xl text-3xl font-semibold text-center">
           Pronto para virar essa chave?
         </h1>

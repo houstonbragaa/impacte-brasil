@@ -2,10 +2,11 @@ import { LayoutContent } from "../layout/layout-content";
 import Image from "next/image";
 import styles from "@/app/styles.module.css";
 import VideoImpacte from "./video-impacte";
+import Title from "../common/title";
 
 const Main = () => {
   return (
-    <LayoutContent className="relative flex flex-col mt-24 mb-24 justify-center items-center gap-10 sm:gap-16 md:gap-20">
+    <LayoutContent className="relative flex flex-col mt-24 2xl:mt-36 mb-24 justify-center items-center gap-10 sm:gap-16 md:gap-10">
       <Image
         alt="bg hero"
         fill={true}
@@ -13,13 +14,11 @@ const Main = () => {
         className={`opacity-40 ${styles.bgImage}`}
         priority={true}
       />
-      <h1 className="text-secondary-blue text-2xl sm:text-3xl md:text-4xl font-semibold text-center">
-        Conheça nossa história
-      </h1>
+      <Title text="Conheça nossa história" color="text-white"/>
       <div className="flex flex-col md:flex-row md:h-[500px] lg:h-[600px] w-full gap-8 md:gap-6 justify-center items-center">
         <VideoImpacte />
 
-        <div className="flex flex-col gap-6 sm:gap-10 w-full md:w-[420px] lg:w-[700px] h-full">
+        <div className="flex flex-col gap-6 sm:gap-6 w-full md:w-[420px] lg:w-[700px] h-full">
           <p className="text-white/90 md:text-xl text-sm">
             A Impacte Brasil nasceu com um propósito firme: transformar o varejo
             supermercadista em um setor mais forte, estratégico e sustentável.
