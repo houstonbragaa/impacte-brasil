@@ -67,7 +67,8 @@ const Footer = () => {
                 48 3036 2728
               </Link>
               <Link
-                href="/"
+                href="https://wa.me/554898060177"
+                target="_blank"
                 className="text-gray-400 hover:text-gray-400/50  md:text-xl text-md"
               >
                 WhatsApp
@@ -87,19 +88,20 @@ const Footer = () => {
             </h2>
             <div className="flex flex-col gap-2">
               <Link
-                href="/"
+                href="/about"
                 className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
               >
                 Sobre nós
               </Link>
               <Link
-                href="/"
+                href="https://comunidadegira.com.br/"
+                target="_blank"
                 className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
               >
                 Gira comunidade
               </Link>
               <Link
-                href="/"
+                href="/contacts"
                 className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
               >
                 Formulário
@@ -111,13 +113,13 @@ const Footer = () => {
             <h2 className="mb-4 md:text-2xl text-xl font-normal">Políticas</h2>
             <div className="flex flex-col gap-2">
               <Link
-                href="/"
+                href="/privacy"
                 className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
               >
                 Privacidade
               </Link>
               <Link
-                href="/"
+                href="/terms"
                 className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
               >
                 Termos de uso
