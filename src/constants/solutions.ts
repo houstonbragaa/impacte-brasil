@@ -18,7 +18,7 @@ export const solutions = [
     icon: "/people.png",
     title: "Comunidade",
     description:
-      "Acompanhamento próximo para garantir a execução e evolução do negócio.",
+      "Grupos exclusivos para fazer networking e ficar por dentro de tudo.",
   },
   {
     id: 4,
