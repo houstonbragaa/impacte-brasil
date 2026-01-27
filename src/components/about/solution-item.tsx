@@ -7,8 +7,8 @@ const SolutionItem = ({ icon, title, description, className = "" }: SolutionsPro
       <div className="bg-white rounded-3xl p-8 h-full w-full flex gap-4 flex-col justify-center items-center">
         <Image 
           src={icon}
-          width={256}
-          height={256}
+          width={50}
+          height={50}
           className="w-[50px] h-[50px]"
           quality={100}
           alt={title}
