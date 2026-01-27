@@ -27,9 +27,12 @@ const Header = ({ isTransparent }: HeaderProps) => {
       <LayoutContent>
         <div className="flex justify-between h-20 items-center text-white">
           <Image
-            width={200}
-            className="md:w-[300px] w-[200px] mb-2"
-            height={40}
+            width={600}
+            height={120}
+            className="md:w-[300px] w-[200px] h-auto mb-2"
+            sizes="(min-width: 768px) 300px, 200px"
+            quality={100}
+            priority
             alt="logo"
             src="/logo.png"
           />
