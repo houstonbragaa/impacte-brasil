@@ -16,7 +16,7 @@ const Results = () => {
         <LayoutContent className="flex items-start gap-10 lg:gap-0 flex-col lg:flex-row lg:justify-around w-full">
           <ResultItem value="500M" description={"Em\nresultados"} />
           <div className="lg:h-12 lg:w-[2px] h-[2px] w-[60%] bg-primary-green"></div>
-          <ResultItem value="100" description={"Mercados\natendidos"} />
+          <ResultItem value="200" description={"Mercados\natendidos"} />
           <div className="lg:h-12 lg:w-[2px] h-[2px] w-[60%] bg-primary-green"></div>
           <ResultItem value="14" description={"Empresas no\necossistema"} />
           <div className="lg:h-12 lg:w-[2px] h-[2px] w-[60%] bg-primary-green"></div>

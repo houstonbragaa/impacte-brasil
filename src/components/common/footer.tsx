@@ -46,10 +46,10 @@ const Footer = () => {
             <h2 className="mb-4 md:text-2xl text-xl font-normal">Endereço</h2>
             <div className="flex flex-col gap-2">
               <h3 className="text-gray-400 md:text-xl text-md">
-                Rod. Admar Gonzaga, 440
+                Torre B - Hantei Office Building, R.
               </h3>
               <h3 className="text-gray-400 md:text-xl text-md">
-                Torre Pacifico – Itacorubi
+                Emílio Blum, 131 - sala 707 - Centro
               </h3>
               <h3 className="text-gray-400 md:text-xl text-mdl">
                 Florianópolis/SC
