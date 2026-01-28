@@ -45,13 +45,13 @@ const Footer = () => {
           <div className="flex flex-col justify-start">
             <h2 className="mb-4 md:text-2xl text-xl font-normal">Endereço</h2>
             <div className="flex flex-col gap-2">
-              <h3 className="text-gray-400 md:text-xl text-md">
+              <h3 className="text-gray-400 2xl:text-xl text-md">
                 Torre B - Hantei Office Building, R.
               </h3>
-              <h3 className="text-gray-400 md:text-xl text-md">
+              <h3 className="text-gray-400 2xl:text-xl text-md">
                 Emílio Blum, 131 - sala 707 - Centro
               </h3>
-              <h3 className="text-gray-400 md:text-xl text-mdl">
+              <h3 className="text-gray-400 2xl:text-xl text-mdl">
                 Florianópolis/SC
               </h3>
             </div>
@@ -62,20 +62,20 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <Link
                 href="/"
-                className="text-gray-400 cursor-text  md:text-xl text-mdl"
+                className="text-gray-400 cursor-text  2xl:text-xl text-mdl"
               >
                 48 3036 2728
               </Link>
               <Link
                 href="https://wa.me/554898060177"
                 target="_blank"
-                className="text-gray-400 hover:text-gray-400/50  md:text-xl text-md"
+                className="text-gray-400 hover:text-gray-400/50  2xl:text-xl text-md"
               >
                 WhatsApp
               </Link>
               <Link
                 href="/"
-                className="text-gray-400 cursor-text  md:text-xl text-md"
+                className="text-gray-400 cursor-text  2xl:text-xl text-md"
               >
                 contato@impactebrasil.com.br
               </Link>
@@ -89,20 +89,20 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <Link
                 href="/about"
-                className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
+                className="text-gray-400 hover:text-gray-400/50 2xl:text-xl text-md"
               >
                 Sobre nós
               </Link>
               <Link
                 href="https://comunidadegira.com.br/"
                 target="_blank"
-                className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
+                className="text-gray-400 hover:text-gray-400/50 2xl:text-xl text-md"
               >
                 Gira comunidade
               </Link>
               <Link
                 href="/contacts"
-                className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
+                className="text-gray-400 hover:text-gray-400/50 2xl:text-xl text-md"
               >
                 Formulário
               </Link>
@@ -114,13 +114,13 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <Link
                 href="/privacy"
-                className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
+                className="text-gray-400 hover:text-gray-400/50 2xl:text-xl text-md"
               >
                 Privacidade
               </Link>
               <Link
                 href="/terms"
-                className="text-gray-400 hover:text-gray-400/50 md:text-xl text-md"
+                className="text-gray-400 hover:text-gray-400/50 2xl:text-xl text-md"
               >
                 Termos de uso
               </Link>
